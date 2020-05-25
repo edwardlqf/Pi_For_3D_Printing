@@ -15,3 +15,7 @@ https://www.arrow.com/en/products/3275/adafruit-industries
 https://coral.ai/products/accelerator/
 https://coral.ai/products/dev-board/
 https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
+
+Purchases:
+https://www.buyapi.ca/product/raspberry-pi-4-model-b-2gb/
+Cost: ~65 CAD after shipping & tax
