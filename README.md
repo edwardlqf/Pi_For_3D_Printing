@@ -17,5 +17,24 @@ https://coral.ai/products/dev-board/
 https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
 
 Purchases:
+Pi 4 board - 2Gb
 https://www.buyapi.ca/product/raspberry-pi-4-model-b-2gb/
 Cost: ~65 CAD after shipping & tax
+
+5V 3A Raspberry Pi 4 Power Supply Type-C Power Adapter With ON/OFF Switch US Charger for Raspberry Pi 4 Model B
+https://www.aliexpress.com/item/4001003445753.html?spm=a2g0s.9042311.0.0.3cff4c4dRlXQbf
+Cost: ~4 CAD
+
+Raspberry Pi 4 Fan, Raspberry Pi Cooling Fan 30x30x7mm DC 5V Brushless Cooling Fan Raspberry Pi Heatsink Pi 4 Model B
+https://www.aliexpress.com/item/4000195229991.html?spm=a2g0s.9042311.0.0.3cff4c4dRlXQbf
+Cost: ~2 CAD
+
+Raspberry Pi Camera 1080p 720p Camera module for Raspberry pi 4 5Mp Webcam
+https://www.aliexpress.com/item/32950459725.html?spm=a2g0s.9042311.0.0.3cff4c4dRlXQbf
+Cost: ~4 CAD
+
+
+
+
+
+
