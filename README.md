@@ -45,7 +45,9 @@ After I got to the VNC viewer stag, I got the error of "raspberry pi cannot curr
 I again followed tomshardware tips, and the first fix of changing resolution fixed the problem for me.
 https://www.tomshardware.com/how-to/fix-cannot-currently-show-desktop-error-raspberry-pi
 
-
+Now I am going to install Octoprint onto existing Raspberry Pi OS, as I will be running ML models onto this Pi later on. So I will not be using the OctoPi image installing method.
+The guide I am following is:
+https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337
 
 
 
