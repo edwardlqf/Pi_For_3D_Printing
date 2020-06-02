@@ -34,6 +34,17 @@ https://www.aliexpress.com/item/32950459725.html?spm=a2g0s.9042311.0.0.3cff4c4dR
 Cost: ~4 CAD
 
 
+Install Raspberry Pi OS onto Pi 4 B 2Gb.
+I followed this exactly:
+https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
+Problems I encountered:
+I did not have a micro-HDMI so I could not attached a monitor to the Pi.
+I used ethernet for connectivity but also made the mistake of powering my Pi with USB from my computer, I think the Pi will pirortize the USB connection. So you should be using the USB C port to only power the Pi, I had to plug my Pi into a power bank as I did not have a long enough wire for the outlet.
+
+After I got to the VNC viewer stag, I got the error of "raspberry pi cannot currently show the desktop".
+I again followed tomshardware tips, and the first fix of changing resolution fixed the problem for me.
+https://www.tomshardware.com/how-to/fix-cannot-currently-show-desktop-error-raspberry-pi
+
 
 
 
