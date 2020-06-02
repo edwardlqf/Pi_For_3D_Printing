@@ -1,5 +1,5 @@
 # Pi_For_3D_Printing
- 
+
 Background Research:
 
 https://towardsdatascience.com/portable-computer-vision-tensorflow-2-0-on-a-raspberry-pi-part-1-of-2-84e318798ce9
@@ -49,5 +49,14 @@ Now I am going to install Octoprint onto existing Raspberry Pi OS, as I will be 
 The guide I am following is:
 https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337
 
+After installing Octoprint, while running Octoprint: pi@raspberrypi ~ $ ~/OctoPrint/venv/bin/octoprint serve
+I was hang up on the line: "octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid"
+
+Answer might be here:
+https://community.octoprint.org/t/problem-installing-octoprint/3625/5
 
 
+
+
+
+Use df -h to check how much space is left on SD card.
