@@ -55,8 +55,79 @@ I was hang up on the line: "octoprint.plugins.pluginmanager - INFO - Loaded noti
 Answer might be here:
 https://community.octoprint.org/t/problem-installing-octoprint/3625/5
 
+Did not work:
+Haproxy for Octoprint on your computers web browers.
+http://gregtrowbridge.com/setting-up-a-multiple-raspberry-pi-web-server-part-2/
+
+Instead used NHINX for Octoprint:
+https://community.octoprint.org/t/reverse-proxy-configuration-examples/1107
+https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 
 
 
 
 Use df -h to check how much space is left on SD card.
+
+
+
+
+
+Starting tensorflow:
+https://www.youtube.com/watch?v=aimSGOAUI8Y&list=WL&index=16&t=0s
+
+Installing tensorflow lite:
+https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md
+
+Make custom Image classification model:
+To detect 3D print failures.
+Could not find a guide for image classification for the Raspberry Pi. Most guides are on object detection.
+Will be following TensorFlow tutorials, to try to create Image classification for tensorflow lite.
+https://www.tensorflow.org/lite/tutorials/model_maker_image_classification
+
+
+Setting up labels for classification:
+Will be using google images:
+https://www.google.com/search?q=3d+print+fails&rlz=1C1CHBD_enUS752US752&sxsrf=ALeKk03WjKh6-41n3tw5yP8r6ZLIl0WnNA:1591117667697&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKwoObz-PpAhXMqZ4KHbc9Ax8Q_AUoAXoECBAQAw&biw=1920&bih=969
+Downloading google images in bulk.
+Searching for, 3D prints fails, 3D prints stringing, 3D prints wrong,
+
+Convert images to JPG or JPEG. I was getting error when I used PNG format.
+
+Manually drag images into 2 folders, either okay print or failed print.
+
+
+Kept getting error:
+InvalidArgumentError:  Expected image (JPEG, PNG, or GIF), got unknown format starting with 'RIFF\344D\000\000WEBPVP8 '
+	 [[{{node cond/else/_1/cond/DecodePng}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_57873]
+
+I first tried to rename all files, convert everything to JPG, then run below code to see which file is failed at.   
+
+import os
+#Function to rename multiple files
+for count, filename in enumerate(os.listdir('C:\\tensorflow1\\dataset\\prints\\fail')):
+    print (filename)
+    image_string = tf.io.read_file('C:\\tensorflow1\\dataset\\prints\\fail\\' + filename)
+    image_decoded = tf.image.decode_jpeg(image_string, channels=3)
+
+
+delete the failed file.
+
+This fixed the problem.
+
+installing TFlite on PI:
+https://www.tensorflow.org/lite/guide/python
+
+Now follow this guide to set up the trained model onto the Pi:
+https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/raspberry_pi
+
+
+
+
+
+
+
+
+Possibly try Google Coral USB Accelerator: https://www.amazon.ca/gp/product/B07S214S5Y/ref=ox_sc_act_title_1?smid=A3DWYIK6Y9EEQB&psc=1
+
+Possibly try SSD USB for booting raspberrypi OS.
