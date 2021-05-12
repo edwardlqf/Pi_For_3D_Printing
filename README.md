@@ -65,8 +65,8 @@ https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 
 
 
-
-Use df -h to check how much space is left on SD card.
+Set up Pi Camera:
+https://www.youtube.com/watch?v=0hrF8Wq8SSQ
 
 
 
@@ -131,3 +131,26 @@ https://github.com/tensorflow/examples/tree/master/lite/examples/image_classific
 Possibly try Google Coral USB Accelerator: https://www.amazon.ca/gp/product/B07S214S5Y/ref=ox_sc_act_title_1?smid=A3DWYIK6Y9EEQB&psc=1
 
 Possibly try SSD USB for booting raspberrypi OS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+retraining
+https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb#scrollTo=iBMcobPHdD8O
+
+https://coral.ai/docs/edgetpu/models-intro/#compatibility-overview
+
+https://coral.ai/docs/edgetpu/retrain-classification/
+
+https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#step-1e-set-up-tensorflow-lite-detection-model
+
+https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10
